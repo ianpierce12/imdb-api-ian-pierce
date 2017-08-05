@@ -1,0 +1,47 @@
+.space-under {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 25px;
+  border-bottom: 1px solid black;
+}
+
+.space {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 75px;
+  border-bottom: 1px solid black;
+}
+
+.thumbnail-image {
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+.pager {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navigation {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.point {
+  cursor: pointer;
+}
+
+.background-gray {
+  background-color: #f4f4f4;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}

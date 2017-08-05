@@ -1,0 +1,12 @@
+.thumbnail-image {
+  height: 50px;
+  width: 50px;
+}
+
+.button-size {
+  max-height: 50px;
+}
+
+.point {
+  cursor: pointer;
+}

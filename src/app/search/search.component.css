@@ -1,0 +1,13 @@
+.pad {
+  padding: 25px;
+}
+
+.form-item-margin {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.full-width {
+  width: 100%;
+}

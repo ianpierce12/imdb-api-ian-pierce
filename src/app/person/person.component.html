@@ -1,0 +1,13 @@
+<div class="row">
+  <img class="thumbnail-image" [src]="person.image.thumb || 'http://www.freeiconspng.com/uploads/no-image-icon-1.jpg'" />
+  <div class="col-sm-3">
+    <h3>{{person.title}}</h3>
+  </div>
+  <div class="col-sm-3">
+    {{person.birthday}}
+  </div>
+  <div class="col-sm-3">
+    {{person.person_id}}
+  </div>
+  <button class="btn btn-primary button-size point" (click)="navigateToPerson()">VIEW DETAILS</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="row">
+  <img class="thumbnail-image" [src]="movie.poster.thumb || 'http://www.freeiconspng.com/uploads/no-image-icon-1.jpg'" />
+  <div class="col-sm-3">
+    <h4>{{movie.title}}</h4>
+  </div>
+  <div class="col-sm-2">
+    {{movie.year}}
+  </div>
+  <div class="col-sm-2">
+    {{movie.rating}}
+  </div>
+  <div class="col-sm-2">
+    {{movie.imdb_id}}
+  </div>
+  <button class="btn btn-primary button-size point" (click)="navigateToMovie(movie.imdb_id)">VIEW DETAILS</button>
+
+</div>

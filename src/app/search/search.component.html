@@ -1,0 +1,69 @@
+<div class="container-fluid pad">
+  <div class="row pad justify-content-center">
+    <h1>IMDB DATA SEARCH</h1>
+  </div>
+  <div class="row">
+    <form class="form-inline row full-width" (ngSubmit)="movieTitleSearch(f)" #f="ngForm">
+      <label for="movie_search_terms" class="form-item-margin col-sm-3"><h5>SEARCH BY MOVIE TITLE:</h5></label>
+      <input
+      type="text"
+      id="search_terms"
+      class="form-control form-item-margin col-sm-4"
+      ngModel
+      name="search_terms"
+      required />
+      <button
+          class="btn btn-primary form-item-margin col-sm-2"
+          type="submit"
+          [disabled]="!f.valid">Search</button>
+    </form>
+  </div>
+  <div class="row">
+    <form class="form-inline row full-width" (ngSubmit)="movieIdSearch(f1)" #f1="ngForm">
+      <label for="movie_id_search_terms" class="form-item-margin col-sm-3"><h5>SEARCH BY MOVIE ID:</h5></label>
+      <input
+      type="text"
+      id="search_terms"
+      class="form-control form-item-margin col-sm-4"
+      ngModel
+      name="search_terms"
+      required />
+      <button
+          class="btn btn-primary form-item-margin col-sm-2"
+          type="submit"
+          [disabled]="!f1.valid">Search</button>
+    </form>
+  </div>
+  <div class="row">
+    <form class="form-inline row full-width" (ngSubmit)="personNameSearch(f2)" #f2="ngForm">
+      <label for="person_search_terms" class="form-item-margin col-sm-3"><h5>SEARCH BY PERSON NAME:</h5></label>
+      <input
+      type="text"
+      id="search_terms"
+      class="form-control form-item-margin col-sm-4"
+      ngModel
+      name="search_terms"
+      required />
+      <button
+          class="btn btn-primary form-item-margin col-sm-2"
+          type="submit"
+          [disabled]="!f2.valid">Search</button>
+    </form>
+  </div>
+  <div class="row">
+    <form class="form-inline row full-width" (ngSubmit)="personIdSearch(f3)" #f3="ngForm">
+      <label for="search_terms" class="form-item-margin col-sm-3"><h5>SEARCH BY PERSON ID:</h5></label>
+      <input
+      type="text"
+      id="search_terms"
+      class="form-control form-item-margin col-sm-4"
+      ngModel
+      name="search_terms"
+      required />
+      <button
+          class="btn btn-primary form-item-margin col-sm-2"
+          type="submit"
+          [disabled]="!f3.valid">Search</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <img [src]="movie.poster.large" class="large-image" />
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-6">
+        <div class="row justify-content-center">
+          <h2>{{movie.title}}</h2>
+        </div>
+        <div class="row">
+          <h5>**{{movie.rating}}**</h5>
+        </div>
+        <div class="row">
+          <h5>{{movie.year}}</h5>
+        </div>
+        <div class="row content-box">
+          {{movie.storyline}}
+        </div>
+    </div>
+  </div>
+</div>

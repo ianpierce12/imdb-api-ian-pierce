@@ -1,0 +1,34 @@
+<div class="container-fluid no-pad">
+  <div *ngIf="loading" class="loading">
+    <img src="https://media.giphy.com/media/jAYUbVXgESSti/source.gif" />
+  </div>
+  <div *ngIf="!loading && !error">
+    <div class="row space text-center">
+      <div class="col-sm-3 point" (click)="sort(title)">
+        <h4>TITLE</h4>
+      </div>
+      <div class="col-sm-2 point" (click)="sort(year)">
+        YEAR
+      </div>
+      <div class="col-sm-2 point" (click)="sort(rating)">
+        RATING
+      </div>
+      <div class="col-sm-2 point" (click)="sort(imdb_id)">
+        ID
+      </div>
+    </div>
+    <div class="background-gray">
+      <div *ngFor="let movie of movies" class="space-under background-gray text-center">
+        <app-movie [movie]="movie" (click)="navigateToMovie(movie.imdb_id)"></app-movie>
+      </div>
+    </div>
+    <div class="row justify-content-center navigation">
+      <h4 class="pager btn btn-primary point" *ngIf="currentPage > 0" (click)="pageDown()"><</h4>
+      <h4 class="pager">{{currentPage+1}}</h4>
+      <h4 class="pager btn btn-primary point" *ngIf="!max" (click)="pageUp()">></h4>
+    </div>
+  </div>
+  <div *ngIf="error">
+    {{error}}
+  </div>
+</div>

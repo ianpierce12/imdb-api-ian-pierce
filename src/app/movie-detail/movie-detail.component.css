@@ -1,0 +1,8 @@
+.large-image {
+  max-width: 100%;
+}
+
+.content-box {
+  padding: 50px;
+  border: 2px solid black;
+}
